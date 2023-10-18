@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe Book</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta name="description" content="recipe book">
+        <style>
+            * {
+                margin: 0px;
+                font-family: sans-serif;
+            }
+            .spacer {
+                font-size: 500px;
+            }
+            .backToTopL {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0%;
+                overflow: hidden;
+                background-color: black;
+            }
+            .backToTop {
+                float: right;
+                color: black;
+                background-color: rgb(0, 255, 255);
+                text-align: center;
+                padding: 14px 16px;
+                border-left: 1px solid rgb(0, 255, 255);
+                border-top: 1px solid rgb(0, 255, 255);
+                border-radius: 15px 0px 0px 0px;
+            }
+            .backToTop:hover {
+                background-color: black;
+                color: rgb(0, 255, 255);
+            }
+            .source {
+                float: left;
+                color: black;
+                background-color: rgb(0, 255, 255);
+                text-align: center;
+                padding: 14px 16px;
+                border-right: 1px solid rgb(0, 255, 255);
+                border-top: 1px solid rgb(0, 255, 255);
+                border-radius: 0px 15px 0px 0px;
+            }
+            .source:hover {
+                background-color: black;
+                color: rgb(0, 255, 255);
+            }            
+            .sourcea {
+                float: left;
+                color: black;
+                background-color: rgb(0, 255, 255);
+                text-align: center;
+                padding: 14px 16px;
+                border-right: 1px solid black;
+                border-top: 1px solid rgb(0, 255, 255);
+            }
+            .sourcea:hover {
+                background-color: black;
+                color: rgb(0, 255, 255);
+            }
+            .sourcey {
+                float: left;
+                color: black;
+                background-color: rgb(0, 255, 255);
+                text-align: center;
+                padding: 14px 16px;
+                border-right: 1px solid rgb(0, 255, 255);
+                border-top: 1px solid rgb(0, 255, 255);
+                border-radius: 0px 15px 0px 0px;
+            }
+            .sourcey:hover {
+                background-color: black;
+                color: rgb(0, 255, 255);
+            }
+
+        </style>
+        <script>
+            function backToTop() {
+                document.getElementById("titleCont").scrollIntoView({behavior: 'smooth'});
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="titleCont" id="titleCont">
+                <h1 class="title">Jack's Recipe Book</h1>
+            </div>
+            <style>
+                .titleCont {
+                    margin: 0px;
+                    padding: 0%;
+                    width: 100%;
+                    background-color: black;
+                    border-bottom: 2px solid rgb(0, 255, 255);
+                }
+                .title {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+            </style>
+            <div class="navBarCont">
+                <h2 class="tableOfContTitle">Table of Contents:</h2>
+                <ul class="navBar">
+                    <li class="li" onclick="item1function()">New York Style Cheescake</li>
+                    <li class="li" onclick="item2function()">Homemade Mac N' Cheese</li>
+                    <li class="li" onclick="item3function()">Homemade Spaghetti Sauce</li>
+                    <li class="li" onclick="item4function()">Classic Risotto</li>
+                </ul>
+                <script>
+                    function item1function() {
+                        document.getElementById("recipe1cont").scrollIntoView({behavior: 'smooth'});
+                    }
+                    function item2function() {
+                        document.getElementById("recipe2cont").scrollIntoView({behavior: 'smooth'});
+                    }
+                    function item3function() {
+                        document.getElementById("recipe3cont").scrollIntoView({behavior: 'smooth'});
+                    }
+                    function item4function() {
+                        document.getElementById("recipe4cont").scrollIntoView({behavior: 'smooth'});
+                    }
+                    function backToTop() {
+                        document.getElementById("titleCont").scrollIntoView({behavior: 'smooth'});
+                    }
+                </script>
+            </div>
+            <style>
+                .navBarCont {
+                    position: relative;
+                    margin: 0px;
+                    padding: 0px;
+                    background-color: black;
+                    border-bottom: 2px solid rgb(0, 255, 255);
+                }
+                .navBar {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: black;
+                }
+                .li {
+                    color:rgb(0, 255, 255);
+                    text-align: center;
+                    padding: 14px 16px;
+                }
+                .li:hover {
+                    background-color:rgb(0, 255, 255);
+                    color: black;
+                }
+                .tableOfContTitle {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+            </style>
+            <div class="recipe1cont" id="recipe1cont">
+                <h1 class="recipe1title">New York Style Cheesecake</h1>
+                <div class="r1ingreCont">
+                    <img class="recipe1img" src="https://lh3.googleusercontent.com/pw/ADCreHfZRU3H2zGxqR-rxJav5ykIvttGdV_IlmTxYxygLES0eupHB8DnacEwqjK8KW0YDnfRqSSaW0L5UIqSLbp6oynwehbN464MaKoWB8GINfz-T_hOZ80=w2400" width="500" height="500">
+                    <div class="r1ingre">
+                        <h2 class="ingredientsT">Ingredients:</h2>
+                        <ol class="r1ingreL">
+                            <li class="rli">1 and 1/2 cups (180g) graham cracker crumbs (about 12 full sheet graham crackers)</li>
+                            <li class="rli">1/4 cup (50g) granulated sugar</li>
+                            <li class="rli">5 Tablespoons (71g) unsalted butter, melted</li>
+                            <li class="rli">32 ounces (904g) full-fat brick cream cheese, softened to room temperature</li>
+                            <li class="rli">1 cup (200g) granulated sugar</li>
+                            <li class="rli">1 cup (240g) full-fat sour cream, at room temperature</li>
+                            <li class="rli">1 teaspoon pure vanilla extract</li>
+                            <li class="rli">2 teaspoons fresh lemon juice (optional, but recommended)</li>
+                            <li class="rli">3 large eggs, at room temperature</li>
+                        </ol>
+                    </div>
+                    <div class="r1inst">
+                        <h2 class="ingredientsT">Instructions:</h2>
+                        <ol class="r1ingreL">
+                            <li class="rli">"Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C)."</li>
+                            <li class="rli">"<strong>Make the crust:</strong> If you’re starting out with full graham crackers, use a food processor or blender to grind them into fine crumbs. Pour into a medium bowl and stir in sugar until combined, and then stir in the melted butter. Mixture will be sandy. Try to smash/break up any large chunks. Pour into an ungreased 9-inch or 10-inch springform pan. With medium pressure using your hand, pat the crumbs down into the bottom and partly up the sides to make a compact crust. Do not pack down with heavy force because that makes the crust too hard. Simply pat down until the mixture is no longer crumby/crumbly and you can use the flat bottom of a small measuring cup to help smooth it all out if needed. Pre-bake for 10 minutes. Remove from the oven and place the hot pan on a large piece of aluminum foil. The foil will wrap around the pan for the water bath in step 4. Allow crust to slightly cool as you prepare the filling."</li>
+                            <li class="rli">"<strong>Make the filling:</strong> Using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and granulated sugar together on medium-high speed in a large bowl until the mixture is smooth and creamy, about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully combined. On medium speed, add the eggs one at a time, beating after each addition until just blended. After the final egg is incorporated into the batter, stop mixing. To help prevent the cheesecake from deflating and cracking as it cools, avoid over-mixing the batter as best you can. You will have close to 6 cups of batter."</li>
+                            <li class="rli">"<strong>Prepare the simple water bath:</strong> watch my youtube video below to help you; the visual guide will assist you in this step. Boil a pot of water. You need 1 inch of water in your roasting pan for the water bath, so make sure you boil enough. I use an entire kettle of hot water. As the water is heating up, wrap the aluminum foil around the springform pan. Place the pan inside of a large roasting pan. Pour the cheesecake batter on top of the crust. Use a rubber spatula or spoon to smooth it into an even layer. Carefully pour the hot water inside of the pan and place in the oven. (Or you can place the roasting pan in the oven first, then pour the hot water in. Whichever is easier for you.)"</li>
+                            <li class="rli">"Bake cheesecake for 55–70 minutes or until the center is almost set. If you notice the cheesecake browning too quickly on top, tent it with aluminum foil halfway through baking. When it’s done, the center of the cheesecake will slightly wobble if you gently shake the pan. Turn the oven off and open the oven door slightly. Let the cheesecake sit in the oven in the water bath as it cools down for 1 hour. Remove from the oven and water bath, then cool cheesecake completely uncovered at room temperature. Then cover and refrigerate the cheesecake for at least 4 hours or overnight."</li>
+                            <li class="rli">"Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the rim. Using a clean sharp knife, cut into slices for serving. For neat slices, wipe the knife clean and dip into warm water between each slice."</li>
+                            <li class="rli">Serve cheesecake with desired toppings. Cover and store leftover cheesecake in the refrigerator for up to 5 days.</li>
+                        </ol>
+                    </div>
+                </div>
+                <ul class="backToTopL">
+                    <li class="backToTop" onclick="backToTop()">Back to Top</li>
+                    <li class="sourcea" onclick="source1()">See this recipe at "sallysbakingaddiction.com"</li>
+                    <li class="sourcey" onclick="vid1func()">See the recipe on youtube</li>
+                </ul>
+                <script>
+                    function source1() {
+                        window.open('https://sallysbakingaddiction.com/classic-cheesecake/#tasty-recipes-66517', '_blank').focus();
+                    }
+                    function vid1func() {
+                        window.open('https://youtu.be/Lelj1UHYmco', '_blank').focus();
+                    }
+                </script>
+            </div>
+            <style>
+                .recipe1cont {
+                    background-color: black;
+                    border-bottom: 2px solid rgb(0, 255, 255);
+                    margin: 0px;
+                }
+                .recipe1title {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+                .recipe1img {
+                    margin-left: 50px;
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .ingredientsT {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+                .r1ingre {
+                    float: right;
+                    width: 500px;
+                    margin-top: 50px;
+                    margin-right: 50px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .r1inst {
+                    margin: 50px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .r1ingreL {
+                    margin-bottom: 5px;
+                }
+                .rli {
+                    color: rgb(0, 255, 255);
+                }
+            </style>
+            <div class="recipe2cont" id="recipe2cont">
+                <h1 class="recipe2title">Homemade Mac N' Cheese</h1>
+                <img class="recipe2img" src="https://lh3.googleusercontent.com/pw/ADCreHdPd9rWC0gToZE9COTAZhkLs21VR-yHRqK16o_PegDrNVDV1SIOHzcoFemH8Uc5oEA-jXQe5Jj1BDn-U9SZyEV4FeZzaXZpB2EqMdnd8ST9fGuu2M4=w2400" width="500"  height="500">
+                <div class="r2ingre">
+                    <h2 class="r2inTitle">Ingredients:</h2>
+                    <ol class="r2l">
+                        <li class="rli">1 lb. dried elbow pasta</li>
+                        <li class="rli">1/2 cup unsalted butter</li>
+                        <li class="rli">1/2 cup all purpose flour</li>
+                        <li class="rli">1 and 1/2 cups whole milk</li>
+                        <li class="rli">2 and 1/2 cups half and half</li>
+                        <li class="rli">4 cups shredded medium sharp cheddar cheese divided (measured after shredding)</li>
+                        <li class="rli">2 cups shredded Gruyere cheese divided (measured after shredding)</li>
+                        <li class="rli">1/2 Tbsp. salt</li>
+                        <li class="rli">1/2 tsp. black pepper</li>
+                        <li class="rli">1/4 tsp. paprika</li>
+                    </ol>
+                </div>
+                <div class="r2inst">
+                    <h2 class="r2inTitle">Instructions:</h2>
+                    <ol class="r2l">
+                        <li class="rli">"Preheat oven to 325 degrees F and grease a 3 qt baking dish (9x13").  Set aside."</li>
+                        <li class="rli">"Bring a large pot of salted water to a boil.  When boiling, add dried pasta and cook 1 minute less than the package directs for al dente.  Drain and drizzle with a little bit of olive oil to keep from sticking."</li>
+                        <li class="rli">"While water is coming up to a boil, shred cheeses and toss together to mix, then divide into three piles.  Approximately 3 cups for the sauce, 1 1/2 cups for the inner layer, and 1 1/2 cups for the topping."</li>
+                        <li class="rli">"Melt butter in a large saucepan over MED heat.  Sprinkle in flour and whisk to combine.  Mixture will look like very wet sand.  Cook for approximately 1 minute, whisking often.  Slowly pour in about 2 cups or so of the half and half, while whisking constantly, until smooth.  Slowly pour in the remaining half and half and the whole milk, while whisking constantly, until combined and smooth."</li>
+                        <li class="rli">"Continue to heat over MED heat, whisking very often, until thickened to a very thick consistency.  It should almost be the consistency of a semi thinned out condensed soup"</li>
+                        <li class="rli">"Remove from the heat and stir in spices and 1 1/2 cups of the cheeses, stirring to melt and combine.  Stir in another 1 1/2 cups of cheese, and stir until completely melted and smooth."</li>
+                        <li class="rli">"In a large mixing bowl, combine drained pasta with cheese sauce, stirring to combine fully.  Pour half of the pasta mixture into the prepared baking dish.  Top with 1 1/2 cups of shredded cheeses, then top that with the remaining pasta mixture."</li>
+                        <li class="rli">"Sprinkle the top with the last 1 1/2 cups of cheese and bake for 15 minutes, until cheesy is bubbly and lightly golden brown."</li>
+                    </ol>
+                </div>
+                <ul class="backToTopL">
+                    <li class="source" onclick="source2()">See this recipe at "thechunkychef.com"</li>
+                    <li class="backToTop" onclick="backToTop()">Back to Top</li>
+                </ul>
+                <script>
+                    function source2() {
+                        window.open('https://www.thechunkychef.com/family-favorite-baked-mac-and-cheese/#wprm-recipe-container-9151', '_blank').focus();
+                    }
+                </script>
+            </div>
+            <style>
+                .recipe2cont {
+                    background-color: black;
+                    border-bottom: 2px solid rgb(0, 255, 255);
+                    margin: 0px;
+                }
+                .recipe2title {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+                .r2ingre {
+                    float: right;
+                    width: 500px;
+                    margin-top: 50px;
+                    margin-right: 50px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .r2inst {
+                    border: 1px solid rgb(0, 255, 255);
+                    margin: 50px;
+                    border-radius: 30px;
+                }
+                .r2inTitle {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+                .r2l {
+                    margin-bottom: 5px;
+                }
+                .recipe2img {
+                    margin-left: 50px;
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+            </style>
+            <div class="recipe3cont" id="recipe3cont">
+                <h1 class="recipe3title">Homemade Spaghetti Sauce</h1>
+                <img class="recipe3img" src="https://lh3.googleusercontent.com/pw/ADCreHc1HAm5xC7WfkYirkNb64iNVyfFkJQ92CMIZM5U3ic-2oUzxJlMTZQCTMup82lOF0ubGJMUJPqsrsSyGNbunw5lH1lQtGw6nrAmxHDrn3q8IsJ5GfE=w2400" width="500" height="500">
+                <div class="r3ingre">
+                    <h2 class="r3inTitle">Ingredients:</h2>
+                    <ol class="r3l">
+                        <li class="rli">1 pound ground beef (or ½ lb ground Italian sausage and ½ lb ground beef)</li>
+                        <li class="rli">Salt and freshly ground black pepper , to taste</li>
+                        <li class="rli">1 medium onion , chopped</li>
+                        <li class="rli">15 ounces tomato sauce</li>
+                        <li class="rli">6 ounces tomato paste</li>
+                        <li class="rli">6 ounces tomato paste</li>
+                        <li class="rli">1 Tablespoon dried parsley flakes</li>
+                        <li class="rli">1 teaspoon garlic powder</li>
+                        <li class="rli">Crushed red pepper flakes , to taste</li>
+                        <li class="rli">1 Tablespoon Worcestershire sauce</li>
+                        <li class="rli">1 Tablespoon granulated sugar</li>
+                        <li class="rli">1 cup water</li>
+                        <li class="rli">1/4 cup fresh basil leaves (optional)</li>
+                        <li class="rli">Spaghetti noodles , for serving</li>
+                    </ol>
+                </div>
+                <div class="r3inst">
+                    <h2 class="r3inTitle">Instructions:</h2>
+                    <ol class="r3l">
+                        <li class="rli">"Season ground beef with salt and pepper."</li>
+                        <li class="rli">"In a large skillet, add the beef and chopped onion and brown.  Drain excess grease."</li>
+                        <li class="rli">"Add tomato sauce, tomato paste, Italian seasoning, parsley, garlic powder, crushed red pepper, worcestershire, and sugar to the skillet."</li>
+                        <li class="rli">"Stir well to combine and bring to a boil. Add water and stir well."</li>
+                        <li class="rli">"Reduce heat and simmer for 30 minutes. Add chopped basil before serving, if desired."</li>
+                    </ol>
+                </div>
+                <ul class="backToTopL">
+                    <li class="source" onclick="source3()">See this recipe at "tastesbetterfromscratch.com"</li>
+                    <li class="backToTop" onclick="backToTop()">Back to Top</li>
+                </ul>
+                <script>
+                    function source3() {
+                        window.open('https://tastesbetterfromscratch.com/homemade-spaghetti-sauce/', '_blank').focus();
+                    }
+                </script>
+            </div>
+            <style>
+                .recipe3cont {
+                    background-color: black;
+                    border-bottom: 2px solid rgb(0, 255, 255);
+                    margin: 0px;
+                }
+                .recipe3title {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+                .recipe3img {
+                    margin-left: 50px;
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .r3ingre {
+                    float: right;
+                    width: 500px;
+                    margin-top: 50px;
+                    margin-right: 50px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .r3inTitle {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+                .r3l {
+                    margin: 5px;
+                }
+                .r3inst {
+                    margin: 50px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+            </style>
+            <div class="recipe4cont" id="recipe4cont">
+                <h1 class="recipe4title">Classic Risotto</h1>
+                <img class="recipe4img" src="https://lh3.googleusercontent.com/pw/ADCreHe2vF764v5oTmg3azi5M4bxzsVw4iabRIUpOvusooH7Ql8VFGZXl6Z2pvHRMFaODhEolI8NRr-BK7tqKFbMTtUN94Y7lQe_xo7ck1ma7nKN3iJFxZ4=w2400" width="500" height="500">
+                <div class="r4ingre">
+                    <h2 class="r4inTitle">Ingrdients:</h2>
+                    <ol class="r4l">
+                        <li class="rli">4 cups store-bought or homemade low-sodium chicken broth</li>
+                        <li class="rli">5 tbsp. unsalted butter, divided 1 medium white onion, finely chopped (about 1 1/2 cups)</li>
+                        <li class="rli">2 1/2 tsp. kosher salt, divided</li>
+                        <li class="rli">1 1/2 cups arborio or carnaroli rice</li>
+                        <li class="rli">1 cup dry white wine</li>
+                        <li class="rli">3 oz. Parmesan, finely grated (about 1 1/2 cups)</li>
+                        <li class="rli">3/4 tsp. freshly ground black pepper</li>
+                    </ol>
+                </div>
+                <div class="r4inst">
+                    <h2 class="r4inTitle">Instructions:</h2>
+                    <ol class="r4l">
+                        <li class="rli">"In a medium pot over medium-high heat, heat broth until steaming. Reduce heat to low, cover, and keep warm."</li>
+                        <li class="rli">"Meanwhile, in a large skillet over medium heat, melt 4 tablespoons butter. Add onion and 1/2 teaspoon salt and cook, stirring occasionally, until softened, translucent, and sweet to the taste, 8 to 10 minutes. Add rice and cook, stirring occasionally, until translucent around the edges, 1 to 2 minutes more."</li>
+                        <li class="rli">"Add wine and cook, stirring, until liquid is absorbed, 3 to 4 minutes. Add 3 cups warm broth, stir to incorporate, and bring to a simmer over medium-high heat. Reduce heat to medium-low, cover, and simmer until rice is just tender, 10 to 15 minutes."</li>
+                        <li class="rli">"Uncover and add 1/2 cup warm broth. Return to a simmer over medium heat and continue to cook, stirring, until broth is absorbed, 1 to 2 minutes more. Taste and, if rice is still slightly al dente, add remaining 1/2 cup broth and continue to simmer, stirring, until absorbed and rice is tender."</li>
+                        <li class="rli">"Remove from heat. Stir in Parmesan, pepper, and remaining 1 tablespoon butter until cheese and butter are melted; season with remaining 2 teaspoons salt, if needed. Serve immediately."</li>
+                    </ol>
+                </div>
+                <ul class="backToTopL">
+                    <li class="source" onclick="source4()">See this recipe at "delish.com"</li>
+                    <li class="backToTop" onclick="backToTop()">Back to Top</li>
+                </ul>
+                <script>
+                    function source4() {
+                        window.open('https://www.delish.com/cooking/recipe-ideas/a29786303/risotto-rice-recipe/', '_blank').focus();
+                    }
+                </script>
+            </div>
+            <style>
+                .recipe4cont {
+                    background-color: black;
+                    border-bottom: 2x solid rgb(0, 255, 255);
+                    margin: 0px;
+                }
+                .recipe4title {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+                .recipe4img {
+                    margin-left: 50px;
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .r4inTitle {
+                    color: rgb(0, 255, 255);
+                    text-align: center;
+                }
+                .r4ingre {
+                    float: right;
+                    width: 500px;
+                    margin-top: 50px;
+                    margin-right: 50px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .r4inst {
+                    margin: 50px;
+                    border: 1px solid rgb(0, 255, 255);
+                    border-radius: 30px;
+                }
+                .r4l {
+                    margin-top: 5px;
+                }
+            </style>
+        </div>
+    </body>
+</html>
